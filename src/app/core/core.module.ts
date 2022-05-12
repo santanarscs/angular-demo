@@ -12,10 +12,10 @@ import { AppMaterialModule } from '../shared/app-material/app-material.module';
     MainLayoutComponent
   ],
   imports: [
-    SharedModule,
     CommonModule,
+    AppMaterialModule,
+    SharedModule,
     RouterModule,
-    AppMaterialModule
   ]
 })
 export class CoreModule { }
