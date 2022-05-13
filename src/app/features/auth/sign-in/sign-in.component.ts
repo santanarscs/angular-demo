@@ -1,13 +1,16 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { first } from 'rxjs';
+import { fadeIn } from 'src/app/shared/utils/animations/fade-in';
 import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'slx-sign-in',
   templateUrl: './sign-in.component.html',
   styleUrls: ['./sign-in.component.scss'],
+  animations: [ fadeIn ]
 })
 export class SignInComponent implements OnInit {
   form: FormGroup;
