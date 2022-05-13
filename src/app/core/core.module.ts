@@ -7,15 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
 
 @NgModule({
-  declarations: [
-    AuthLayoutComponent,
-    MainLayoutComponent
-  ],
-  imports: [
-    CommonModule,
-    AppMaterialModule,
-    SharedModule,
-    RouterModule,
-  ]
+  declarations: [AuthLayoutComponent, MainLayoutComponent],
+  imports: [CommonModule, AppMaterialModule, SharedModule, RouterModule],
 })
-export class CoreModule { }
+export class CoreModule {}

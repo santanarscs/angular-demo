@@ -7,14 +7,12 @@ import { AppMaterialModule } from 'src/app/shared/app-material/app-material.modu
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    SignInComponent
-  ],
+  declarations: [SignInComponent],
   imports: [
     CommonModule,
     AuthRoutingModule,
     AppMaterialModule,
-    ReactiveFormsModule
-  ]
+    ReactiveFormsModule,
+  ],
 })
-export class AuthModule { }
+export class AuthModule {}
