@@ -1,7 +1,45 @@
-.container {
-  width: 100%;
+.slx-container {
+  flex: 1;
+  width: 100vw;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.slx-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+}
+
+.slx-sidenav-container {
+  flex: 1;
+}
+.slx-sidenav-content {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
-.layout-spacer {
-  flex: 1 1 auto;
+.slx-sidenav {
+  width: 240px;
+}
+.slx-sidenav-toggle {
+  display: none;
+  padding: 0;
+  margin: 8px;
+  @media (max-width: 720px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  mat-icon {
+    font-size: 30px;
+    color: #fff;
+  }
+}
+
+.wrapper {
+  margin: 30px;
 }

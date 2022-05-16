@@ -5,9 +5,10 @@ import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 @NgModule({
-  declarations: [AuthLayoutComponent, MainLayoutComponent],
+  declarations: [AuthLayoutComponent, MainLayoutComponent, SidenavComponent],
   imports: [CommonModule, AppMaterialModule, SharedModule, RouterModule],
 })
 export class CoreModule {}

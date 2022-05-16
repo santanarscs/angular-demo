@@ -1,0 +1,20 @@
+.slx-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+.slx-title {
+  display: flex;
+  mat-icon {
+    font-size: 2rem;
+  }
+  h3 {
+    margin-left: 0.25rem;
+    font-size: 2rem;
+  }
+}
+span {
+  text-transform: uppercase;
+  font-weight: bold;
+}

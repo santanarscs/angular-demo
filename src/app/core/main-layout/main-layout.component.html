@@ -1,7 +1,32 @@
-<div class="container">
+<div class="slx-container">
+  <mat-progress-bar
+    *ngIf="showIndicatorAction$ | async"
+    class="slx-indicator"
+    mode="indeterminate"
+    color="accent"
+  ></mat-progress-bar>
   <mat-toolbar color="primary">
-    <span>SALUX</span>
-    <span class="layout-spacer"></span>
+    <button class="slx-sidenav-toggle" mat-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>SX Horizon</span>
   </mat-toolbar>
-  <router-outlet></router-outlet>
+  <mat-drawer-container class="slx-sidenav-container">
+    <mat-drawer
+      #drawer
+      class="slx-sidenav"
+      [opened]="!isScreenSmall"
+      [mode]="isScreenSmall ? 'over' : 'side'"
+    >
+      <mat-nav-list role="Navegação" aria-label="Navegação do sistema">
+        <a routerLink="/dashboard" mat-list-item>Dashboard</a>
+        <a routerLink="/patients" mat-list-item>Pacientes</a>
+      </mat-nav-list>
+    </mat-drawer>
+    <div class="slx-sidenav-content">
+      <div class="wrapper">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </mat-drawer-container>
 </div>
