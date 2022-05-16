@@ -5,7 +5,7 @@ import { fadeIn } from 'src/app/shared/utils/animations/fade-in';
   selector: 'slx-patients-list',
   templateUrl: './patients-list.component.html',
   styleUrls: ['./patients-list.component.scss'],
-  animations: [fadeIn]
+  animations: [fadeIn],
 })
 export class PatientsListComponent implements OnInit {
   panelOpenState = false;

@@ -1,7 +1,4 @@
-import {
-  BreakpointObserver,
-  BreakpointState
-} from '@angular/cdk/layout';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
@@ -34,7 +31,7 @@ export class MainLayoutComponent implements OnInit {
         this.showIndicatorSubject.next(true);
       }
       if (event instanceof NavigationEnd) {
-        this.showIndicatorSubject.next(false)
+        this.showIndicatorSubject.next(false);
       }
     });
   }

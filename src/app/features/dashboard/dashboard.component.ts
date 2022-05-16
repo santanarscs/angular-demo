@@ -5,7 +5,7 @@ import { fadeIn } from 'src/app/shared/utils/animations/fade-in';
   selector: 'slx-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss'],
-  animations: [fadeIn]
+  animations: [fadeIn],
 })
 export class DashboardComponent implements OnInit {
   constructor() {}
