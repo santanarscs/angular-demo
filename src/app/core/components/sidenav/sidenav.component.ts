@@ -1,4 +1,13 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Observable, of } from 'rxjs';
+
+interface IMenu {
+  text: string;
+  icon?: string;
+  routerLink?: string;
+  children?: IMenu[];
+}
 
 @Component({
   selector: 'slx-sidenav',
@@ -6,7 +15,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidenav.component.scss'],
 })
 export class SidenavComponent implements OnInit {
-  constructor() {}
+  menuList!: Observable<IMenu[]>;
+  constructor(private http: HttpClient) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.menuList = this.http.get<IMenu[]>('/assets/menu.json');
+  }
 }

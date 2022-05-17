@@ -18,10 +18,7 @@
       [opened]="!isScreenSmall"
       [mode]="isScreenSmall ? 'over' : 'side'"
     >
-      <mat-nav-list role="Navegação" aria-label="Navegação do sistema">
-        <a routerLink="/dashboard" mat-list-item>Dashboard</a>
-        <a routerLink="/patients" mat-list-item>Pacientes</a>
-      </mat-nav-list>
+      <slx-sidenav></slx-sidenav>
     </mat-drawer>
     <div class="slx-sidenav-content">
       <div class="wrapper">

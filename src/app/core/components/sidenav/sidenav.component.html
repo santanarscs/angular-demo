@@ -1,1 +1,5 @@
-<p>sidenav works!</p>
+<mat-nav-list class="side-navnar">
+  <ng-container *ngFor="let menu of menuList | async; index as i">
+    <slx-sidenav-item [menu]="menu"></slx-sidenav-item>
+  </ng-container>
+</mat-nav-list>

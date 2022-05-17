@@ -1,0 +1,33 @@
+[
+  {
+    "text": "Dashboard",
+    "icon": "dashboard",
+    "routerLink": "/dashboard"
+  },
+  {
+    "text": "Prontuário",
+    "children": [
+      {
+        "text": "Registros",
+        "children": [
+          {
+            "text": "Evolução",
+            "routerLink": "/evolutions"
+          },
+          {
+            "text": "Sinais Vitais",
+            "routerLink": "/vitals"
+          },
+          {
+            "text": "Anotações de Enfermagem",
+            "routerLink": "/annotations"
+          },
+          {
+            "text": "Triagem",
+            "routerLink": "/screening"
+          }
+        ]
+      }
+    ]
+  }
+]
